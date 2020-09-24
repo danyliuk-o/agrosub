@@ -8,9 +8,15 @@
     <title>Agro</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header" id="header">
-
+        <div class="header-container">
+            <nav class="header__navigation" id="headerNav">
+                <a href="#descriptionSection">О нас</a>
+                <a href="#categoriesSection">Виды</a>
+                <a href="#contactSection">Контакты</a>
+            </nav>
+        </div>
     </header>
     <main class="main" id="main">
         <section class="banner">
@@ -27,7 +33,7 @@
 
                 </div>
             </div>
-            <div class="banner__arrow">
+            <a class="banner__arrow" href="#descriptionSection">
                 <svg class="banner__arrow-svg arrow-down-svg" style="fill:#dbdbdb;" x="0px" y="0px" width="38.417px"
                     height="18.592px" viewBox="0 0 38.417 18.592">
                     <g>
@@ -36,7 +42,7 @@
                         </path>
                     </g>
                 </svg>
-            </div>
+            </a>
         </section>
         <section id="descriptionSection" class="description-section section-padding">
             <div class="container">
@@ -145,12 +151,13 @@
                     <div class="block-contacts__content">
                         <h2 class="block-contacts__title">Контакты</h2>
                         <ul class="block-contacts__list">
-                            <li class="block-contacts__item"><span>Телефон</span><a
+                            <li class="block-contacts__item"><span>Телефон:</span><a
                                     href="tel:+380970922868">+380970922868</a></li>
-                            <li class="block-contacts__item"><span>Email</span><a
+                            <li class="block-contacts__item"><span>Email:</span><a
                                     href="mailto: agrosugllc@gmail.com">agrosugllc@gmail.com</a></li>
                         </ul>
-                        <p class="block-contacts__address">Адрес: Одесская область, Одесса, ул Базарная 1, корпус А , офис 7</p>
+                        <p class="block-contacts__address">Адрес: Одесская область, Одесса, ул Базарная 1, корпус А ,
+                            офис 7</p>
                         <ul class="block-contacts__social">
                             <li><a href=""><svg class="t-sociallinks__svg" version="1.1" id="Layer_1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -191,7 +198,10 @@
             </div>
         </section>
     </main>
-    <footer class="footer" id="footer"></footer>
+    <!-- <footer class="footer" id="footer"></footer> -->
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
